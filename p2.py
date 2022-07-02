@@ -27,6 +27,7 @@ def main():
                 diccionario[frase.upper()] = diccionario[frase.upper()]+1
     keys=list(diccionario.keys())
     valores=list(diccionario.values())
+    print(valores)
     for x in range(len(keys)):
         palabra=str(keys[x])+" "+str(valores[x])+"\n"
         grabarArchivo(archivoSalida,palabra)
